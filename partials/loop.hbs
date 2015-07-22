@@ -4,63 +4,8 @@
 </div>
 
 {{! This is the post loop - each post will be output using this markup }}
-<aside class="right-aside">
-  <div class="aside-section">
-    <h3>About Us</h3>
-    <p class="mini-about">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nulla, id explicabo amet quaerat.
-    </p>
-  </div>
+{{> "aside" }}
 
-  <div class="aside-section">
-    <h3>Instagram</h3>
-    <div class="instagram">
-      <div class="row">
-        <div class="col-lg-4">
-          <img src="https://uploads.socialspirit.com.br/fanfics/historias/fanfiction-bangtan-boys-bts-you-are-beautiful-2804024,031220142310.jpg" alt="Instagram1">
-        </div>
-        <div class="col-lg-4">
-          <img src="http://img13.deviantart.net/631a/i/2013/275/0/9/something_beautiful_will_come_your_way_by_ineedchemicalx-d6ox37r.jpg" alt="Instagram2">
-        </div>
-        <div class="col-lg-4">
-          <img src="http://www.stylesstyle.com/wp-content/uploads/2013/07/Beautiful-Bridal-Bangles.jpg" alt="Instagram 3">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <img src="https://uploads.socialspirit.com.br/fanfics/historias/fanfiction-bangtan-boys-bts-you-are-beautiful-2804024,031220142310.jpg" alt="Instagram1">
-        </div>
-        <div class="col-lg-4">
-          <img src="http://img13.deviantart.net/631a/i/2013/275/0/9/something_beautiful_will_come_your_way_by_ineedchemicalx-d6ox37r.jpg" alt="Instagram2">
-        </div>
-        <div class="col-lg-4">
-          <img src="http://www.stylesstyle.com/wp-content/uploads/2013/07/Beautiful-Bridal-Bangles.jpg" alt="Instagram 3">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="aside-section">
-    <h3>Relevant Title</h3>
-    <p class="mini-about">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nulla, id explicabo amet quaerat.
-    </p>
-  </div>
-
-
-  <div class="aside-section">
-    <h3>Connect</h3>
-    <p class="connect">
-      <a href="#" target="_blank"><i class="fa fa-2x fa-facebook"></i></a>
-      <a href="#" target="_blank"><i class="fa fa-2x fa-twitter"></i></a>
-      <a href="#" target="_blank"><i class="fa fa-2x fa-instagram"></i></a>
-      <a href="#" target="_blank"><i class="fa fa-2x fa-pinterest"></i></a>
-      <a href="#" target="_blank"><i class="fa fa-2x fa-google-plus"></i></a>
-      <a href="#" target="_blank"><i class="fa fa-2x fa-tumblr"></i></a>
-      <a href="#" target="_blank"><i class="fa fa-2x fa-youtube-play"></i></a>
-    </p>
-  </div>
-</aside>
 {{#foreach posts}}
 <article class="{{post_class}}">
   <header class="post-header">
@@ -69,11 +14,9 @@
   </header>
   <section class="post-excerpt">
     {{#if image}}<img class="feature-image" src="{{image}}" alt="{{image.name}}" />{{/if}}
-    <p>{{excerpt words="140"}}</p>
+    <p>{{excerpt words="139"}}&hellip;</p>
     <p>
-      <button class="btn-read-more">
-        <a class="read-more" href="{{url}}">Clique para ler mais &raquo;</a>
-      </button>
+      <a class="btn-read-more read-more" href="{{url}}">Clique para ler mais &raquo;</a>
     </p>
   </section>
   <footer class="post-meta">
