@@ -1,0 +1,149 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  max-width: 1040px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+
+
+/* =========================
+   1. Navigation Bar
+   ========================= */
+.nabo-nav {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.nabo-nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+.nabo-nav ul li {
+  display: inline;
+  padding: 15px;
+}
+
+.nabo-nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: rgba(0,0,0, 0.35);
+}
+
+.nabo-nav ul li a:hover {
+  color: rgb(0,0,0);
+}
+
+.nabo-nav ul li.nav-current a {
+  color: rgb(0,0,0);
+}
+
+
+/* =========================
+   2. Header
+   ========================= */
+
+/* Big cover image on the home page */
+.vertical {
+  vertical-align: bottom;
+}
+.nabo-header {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 20vh;
+  margin-bottom: rem;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.no-cover.main-header {
+  min-height: 60px;
+  max-height: 100px;
+}
+
+.nabo-header.main-header .inner {
+  width: 100%;
+}
+
+.nabo-header .main-header-content .page-title {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-size: 2.5em;
+}
+
+
+/* =========================
+   3. Post
+   ========================= */
+
+.post {
+  position: relative;
+  float: left;
+  width: 70%;
+  padding-bottom: 4rem;
+  border-bottom: #EBF2F6 1px solid;
+  word-wrap: break-word;
+}
+
+.post .post-excerpt {
+  padding-right: 30px;
+  font-size: 14px;
+}
+
+.post .post-header {
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+} 
+
+.post .post-header .post-title {
+  font-weight: 400;
+  margin-bottom: -5px;
+}
+
+.post .post-header .nabo-post-date {
+  color: rgba(0,0,0,0.4);
+  font-size: 13px;
+  font-style: italic;
+}
+
+.post .feature-image {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.right-aside {
+  float: right;
+  width: 30%;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 18px;
+}
+
+.right-aside p {
+  line-height: 20px;
+}
+
+.right-aside h3 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.clearfix {
+  clear: both;
+}
+
+
+
