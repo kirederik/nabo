@@ -20,7 +20,8 @@
         </header>
 
         <section class="post-content">
-            <div class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}"></div>
+            {{!--<div class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}"></div>--}}
+            {{#if image}}<img class="feature-image" src="{{image}}" alt="{{image.name}}" />{{/if}}
             {{content}}
         </section>
 

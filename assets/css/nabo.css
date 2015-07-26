@@ -8,6 +8,14 @@ h1, h2, h3, h4, h5, * {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
 
+.desaturate {
+  -webkit-filter: grayscale(75%); filter: grayscale(75%); 
+}
+
+.page-description {
+  font-family: "Dancing Script",  Helvetica, Arial, sans-serif;
+}
+
 p {
   font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
   line-height: 25px;
@@ -66,7 +74,7 @@ article {
   display: table;
   width: 100%;
   height: 20vh;
-  margin-bottom: rem;
+  max-height: 250px;
   text-align: center;
   overflow: hidden;
   margin-bottom: 25px;
@@ -101,7 +109,9 @@ article {
   padding-bottom: 4rem;
   border-bottom: #EBF2F6 1px solid;
   word-wrap: break-word;
+  text-align: justify;
 }
+
 
 .post .post-excerpt {
   padding-right: 30px;
@@ -145,6 +155,10 @@ article {
 
 .right-aside p {
   line-height: 20px;
+}
+
+.right-aside .about-img img {
+  max-width: 30%;
 }
 
 .right-aside h3 {
@@ -193,21 +207,25 @@ article {
 
 .instagram {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .instagram .row .col-lg-4 {
   display: inline-block;
-  width: 32%;
+  float: left;
+  width: 31%;
 }
+
 
 .instagram .row .col-lg-4 img {
   width: 90%;
-  height: 100px;
+  height: 30%;
   margin: 0 auto;
 }
 
 .inner-post {
   max-width: 65%;
+  
 }
 
 .inner-post .post-content img {
@@ -217,3 +235,42 @@ article {
 .inner-post h1 {
   font-size: 2em;
 }
+
+.page .post-content {
+  padding-right: 30px;
+}
+
+.author-profile {
+  padding-top: 100px;
+}
+
+.tag-head {
+  background-color: white!important;
+}
+
+.tag-head .page-title {
+  text-transform: capitalize;
+  font-weight: 400;
+  /*font-family: "Dancing Script", Helvetica, Arial, sans-serif;*/
+}
+
+
+@media only screen and (max-width: 568px) {
+  .post {
+    width: 100%;
+    margin-left: 0!important;
+  }
+  
+  .nabo-nav ul {
+    padding-left: 0!important;
+  }
+  .inner-post {
+    max-width: 100%;
+  }
+  
+  .right-aside {
+    display: none;
+  }
+}
+
+
